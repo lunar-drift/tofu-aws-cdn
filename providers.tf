@@ -1,0 +1,14 @@
+# --- tofu-aws-cdn.providers ---
+
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~>5"
+    }
+  }
+}
+
+provider "aws" {
+  region = var.aws_region
+}
